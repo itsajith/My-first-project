@@ -1,0 +1,27 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<title> Login Page </title>
+        <link type="text/css" rel="stylesheet" href="login.css">
+        <!-- <script> scr="login.js" </script> -->
+</head>    
+<body>    
+  <ul>
+  <li>Home</li>
+    <li>About us</li>
+  </ul>
+    
+    <form action="captcha.html" onsubmit="return check();">  
+        <div class="container">  
+            <h1> Login </h1>  
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" id="uname"><br><br>
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" id="upass"><br><br>
+            <button type="submit" value="submit" onclick="check()">Login</button> <br>        
+        </div>   
+    </form>    
+    
+    <script src="login.js"> </script>
+</body>     
+</html> 

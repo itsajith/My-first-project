@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">""
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="captcha.css" />
+    <title>Re captcha</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="welcome.html" id="captchaForm" onsubmit="return validate()">
+        <h1>Select the image of <span id="imageSelected" style= "background-color: greenyellow; " class="randomfruit"><script type="text/javascript"> 
+          
+          var fruit=["banana","strawberry","grape"];
+          var random= Math.floor(Math.random()*2)+1;
+          document.write(fruit[random]);
+          console.log(fruit[random]);
+          </script></span> for verfication</h1>
+        
+        <button type="submit" value="submit"  >Submit</button>
+      </form>
+      
+    </div>
+    <main class="container-fluid Select">
+      <table id="tblfruits">
+      <tr><div class="element" ><img src="pics/banana.jpeg" ><input type="checkbox" value="1" class="checkbox" id="banana" /></div></tr>
+      <tr><div class="element" ><img src="pics/strawberry.jpeg"><input type="checkbox" value="2" class="checkbox" id="strawberry" /></div></tr>
+      <tr><div class="element" ><img src="pics/banana.jpeg"><input type="checkbox" value="3" class="checkbox" id="banana" /></div></tr>
+      <tr><div class="element" ><img src="pics/strawberry.jpeg"><input type="checkbox" value="4" class="checkbox" id="strawberry" /></div></tr>
+      <tr><div class="element" ><img src="pics/grape.jpg"><input type="checkbox" value="5" class="checkbox" id="grape" /></div></tr>
+      <tr><div class="element" ><img src="pics/strawberry.jpeg"><input type="checkbox" value="6" class="checkbox" id="strawberry" /></div></tr>
+      <tr><div class="element" ><img src="pics/banana.jpeg"><input type="checkbox" value="7" class="checkbox" id="banana" /></div></tr>
+      <tr><div class="element" ><img src="pics/grape.jpg"><input type="checkbox" value="8" class="checkbox" id="grape" /></div></tr>
+      <tr><div class="element" ><img src="pics/grape.jpg"><input type="checkbox" value="9" class="checkbox" id="grape" /></div></tr>
+      </table>
+
+    </main>
+  
+    <script src="captcha.js"> </script>
+  </body>
+</html>

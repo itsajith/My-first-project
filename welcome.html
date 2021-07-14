@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <h1>My Social media App</h1>
+            <form action="">
+                <input type="text" id="post-title" placeholder="my Name"><br>
+                <textarea id="post-text" placeholder="My thoughts"></textarea><br>
+                <button id="add-btn">Post</button><br><br>
+            </form>
+        </div>
+    </header>
+
+    <section>
+        <div class="container1">
+            <h1>POST FEED....</h1>
+            <hr>
+            <div id="posts">
+        
+                    <div class="post">
+                        <p class="post-counter">Post ${index + 1}</p>
+                        <h3 class="post-title"> $element.title </h3>
+                        <p class="post-text"> $element.text</p>
+                        <button class="post-btn">Delete Post</button>
+                        <button class="post-btn edit-btn">Delete Post</button>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
